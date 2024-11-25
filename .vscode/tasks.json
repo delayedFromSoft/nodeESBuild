@@ -1,0 +1,18 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+	{
+		"label": "call_build_script",
+		"type": "npm",
+		"script": "build",
+		"problemMatcher": ["$tsc"]
+	},
+	{
+		"label": "call_run_script",
+		"type": "npm",
+		"script": "run",
+		"problemMatcher": ["$tsc"]
+	}
+	]
+}
+

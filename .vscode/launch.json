@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Echo the path.",
+            "command": "echo \"info: location is  ${workspaceFolder}\"",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "The transpiled file launcher.",
+            "skipFiles": ["<node_internals>/**"],
+            
+            "preLaunchTask": "call_build_script",
+            "program": "${name}.js"
+        }
+    ]
+}
+
